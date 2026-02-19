@@ -1,0 +1,19 @@
+# Carpetas de compilación y publicación
+bin/
+obj/
+.vs/
+.config/
+.github/
+
+# Archivos de usuario y configuración local
+*.user
+*.suo
+*.cache
+*.log
+
+# Otros archivos que no deben versionarse
+*.dll
+*.exe
+*.pdb
+*.http
+*.sln
