@@ -85,7 +85,7 @@ namespace Sistema_de_Reserva_de_Hoteles.Controllers
             }
 
             var Usuario = await _userManager.Users.FirstOrDefaultAsync(s => s.UserName == LoginUsuario.NombreUsuario.ToLower());
-            if(Usuario == null) return NodFound("Este Usuario no se encuentra Registrado")
+            if (Usuario == null) return NotFound("Este Usuario no se encuentra Registrado");
             var Validacion = await _signInManager.CheckPasswordSignInAsync(Usuario, LoginUsuario.Contraseña, false);
             if (Validacion.Succeeded)
             {
