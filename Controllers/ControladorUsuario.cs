@@ -65,7 +65,7 @@ namespace Sistema_de_Reserva_de_Hoteles.Controllers
                 }
                 else
                 {
-                    return StatusCode(500, "Error al intenr crear el Usuario, intente nuevamente");
+                    return StatusCode(500, "Error al intentar crear el Usuario, intente nuevamente");
                 }
 
 
